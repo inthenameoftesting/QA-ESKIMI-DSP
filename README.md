@@ -14,6 +14,13 @@ npm install
 ```
 
 ## Usage
+
+1. Copy cypress.env.example.json 
+2. Rename copy to cypress.env.json
+3. In "" next to Username write your own username
+4. In "" next to password write your own current password
+
+
 Open cypress in browser to run the test
 ```bash
 npm run cy:open
