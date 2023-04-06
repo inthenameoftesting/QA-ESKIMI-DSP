@@ -1,6 +1,6 @@
 # QA-ESKIMI-DSP
 
-This project is an approach for the task to automated the plattform "Eskimi DSP" using cypress.
+This project is an approach for the task to automate the plattform "Eskimi DSP" using cypress.
 It consists of the test automation code, test cases and thoughts about the DSP from QA point of view.
 Test cases and thoughts about DSP are in "Documentation" folder.
 
