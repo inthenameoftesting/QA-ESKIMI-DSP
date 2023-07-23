@@ -5,12 +5,12 @@ It consists of the test automation code, test cases and thoughts about the DSP f
 Test cases and thoughts about DSP are in "Documentation" folder.
 
 ## Requirements
-* NodeJS Version v18.14.1
+* NodeJS Version v18.14.1.
 * NPM Version 9.3.1.
 
 ## Installation
 ```bash
-npm install 
+npm install
 ```
 
 ## Usage
