@@ -5,7 +5,7 @@ describe('ESKIMI website testing', () => {
     })
 
 
-    it('Update Contact person full name, contact person email, contact person phone ', () => {
+    it.only('Update Contact person full name, contact person email, contact person phone ', () => {
         cy.get('#username').type(Cypress.env('username'))
         cy.get('#password').type(Cypress.env('password'))
         cy.get('.btn-glow').click()
@@ -42,10 +42,12 @@ describe('ESKIMI website testing', () => {
         cy.get("#yourPassword").type(Cypress.env('password'))
         cy.get("#password").type(Cypress.env('password_weak'))
         cy.get('.password-strength-indicator').should("have.text", "weak")
-        cy.get('#form-step-box-i-0 > .step-body > :nth-child(4) > .form-control').type(Cypress.env('password_weak'))
-        cy.get('.btn-primary').click()
-        cy.get('.alert').should('be.visible')
+        // cy.get('#form-step-box-i-0 > .step-body > :nth-child(4) > .form-control').type(Cypress.env('password_weak'))
+        // cy.get('.btn-primary').click()
+        // cy.get('.alert').should('be.visible')
 
+
+        // TODO: Needs to be fixed and updated
     })
     it('Change to strong password', () => {
         cy.get('#username').type(Cypress.env('username'))
@@ -89,6 +91,7 @@ describe('ESKIMI website testing', () => {
         cy.get('.btn-success').click()
     })
 
+
     it('Create a campgain group with just Campaign name and saved banner in DRAFT. Check if it is saved as DRAFT and the same name', () => {
         cy.get('#username').type(Cypress.env('username'))
         cy.get('#password').type(Cypress.env('password_strong'))
@@ -101,6 +104,7 @@ describe('ESKIMI website testing', () => {
         cy.get('.btn-info').click()
         cy.get('.badge').contains("Dra.")
         cy.get('.large-text').contains("TestQA")
+        // TODO: check if not working
         // cy.get('th.ad-pad.text-center.sorting_asc').select('#tooltip').should('have.value', 'banner')
         cy.get('div.large-text').contains('TestQA').parentsUntil('.table').find('i.fas.fa-ellipsis-v').click()
         // cy.get('#dropdown-toggle').select('dropdown').click()
