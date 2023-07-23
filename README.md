@@ -6,7 +6,7 @@ Test cases and thoughts about DSP are in "Documentation" folder.
 
 ## Requirements
 * NodeJS Version v18.14.1
-* NPM Version 9.3.1
+* NPM Version 9.3.1.
 
 ## Installation
 ```bash
